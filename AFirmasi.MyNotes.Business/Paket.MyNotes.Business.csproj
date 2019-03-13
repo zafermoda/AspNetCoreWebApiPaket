@@ -5,8 +5,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AFirmasi.Core\AFirmasi.Core.csproj" />
-    <ProjectReference Include="..\AFirmasi.MyNotes.DataAccess\AFirmasi.MyNotes.DataAccess.csproj" />
+    <ProjectReference Include="..\AFirmasi.Core\Paket.Core.csproj" />
+    <ProjectReference Include="..\AFirmasi.MyNotes.DataAccess\Paket.MyNotes.DataAccess.csproj" />
   </ItemGroup>
 
   <ItemGroup>

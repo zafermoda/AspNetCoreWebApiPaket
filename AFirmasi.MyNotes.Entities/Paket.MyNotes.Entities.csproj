@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AFirmasi.Core\AFirmasi.Core.csproj" />
+    <ProjectReference Include="..\AFirmasi.Core\Paket.Core.csproj" />
   </ItemGroup>
 
   <ItemGroup>
