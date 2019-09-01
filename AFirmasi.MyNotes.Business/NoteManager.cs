@@ -12,7 +12,7 @@ namespace AFirmasi.MyNotes.Business
     public class NoteManager : INoteService
     {
         private INoteRepository noteRepository;
-        private ICommon common;
+        private readonly ICommon common;
 
         public NoteManager(INoteRepository noteRepository, ICommon common)
         {

@@ -52,7 +52,6 @@ namespace AFirmasi.MyNotes.WebapiServis
             */
             #endregion
             
-
             #region MySqlServer Connection Aktif
             services.AddDbContext<MyNotesDbContext>(options =>
                 options.UseMySql(Configuration.GetConnectionString("MySqlDefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
@@ -61,6 +60,7 @@ namespace AFirmasi.MyNotes.WebapiServis
                 options.UseMySql(Configuration.GetConnectionString("MySqlIdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
             #endregion
 
+            #region Identity ve Jwt ayarları
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
                 .AddDefaultTokenProviders();
@@ -83,12 +83,16 @@ namespace AFirmasi.MyNotes.WebapiServis
                         IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("AspNetCoreDersiB"))
                     };
                 });
+            #endregion
 
+            #region Dependency Injections
             services.AddScoped<INoteService, NoteManager>();
             services.AddScoped<INoteRepository, NoteDal>();
             services.AddScoped<ICategoryService, CategoryManager>();
             services.AddScoped<ICategoryRepository, CategoryDal>();
             services.AddScoped<ICommon, WebCommon>();
+
+            #endregion
 
         }
 
@@ -104,8 +108,11 @@ namespace AFirmasi.MyNotes.WebapiServis
                 app.UseHsts();
             }
 
+            #region Ilk veri kayıtları
             SeedData.Initialize(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider);
             SeedIdentityData.Initialize(app.ApplicationServices.GetRequiredService<IServiceScopeFactory>().CreateScope().ServiceProvider).Wait();
+            #endregion
+
             app.UseAuthentication();
             app.UseHttpsRedirection();
             app.UseMvc();

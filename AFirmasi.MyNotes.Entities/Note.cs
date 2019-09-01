@@ -1,6 +1,4 @@
 ﻿using AFirmasi.Core.Entities;
-using System;
-using System.Text;
 
 namespace AFirmasi.MyNotes.Entities
 {

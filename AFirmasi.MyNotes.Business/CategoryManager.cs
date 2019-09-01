@@ -1,23 +1,22 @@
-﻿using AFirmasi.Core.EntityFramework;
-using AFirmasi.MyNotes.Business.Abstract;
-using AFirmasi.MyNotes.Business;
-using AFirmasi.MyNotes.Business.Abstract;
+﻿using AFirmasi.MyNotes.Business.Abstract;
 using AFirmasi.MyNotes.DataAccess.Abstract;
-using AFirmasi.MyNotes.DataAccess.EntityFramework;
 using AFirmasi.MyNotes.Entities;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
 
 namespace AFirmasi.MyNotes.Business
 {
     public class CategoryManager : ICategoryService
     {
+        private readonly ICategoryRepository categoryRepository;
+        private readonly ICommon common;
 
-        private ICategoryRepository categoryRepository;
-        private ICommon common;        
+        public CategoryManager(ICategoryRepository categoryRepository, ICommon common)
+        {
+            this.categoryRepository = categoryRepository;
+            this.common = common;
+        }
 
         public void Add(Category entity)
         {

@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AFirmasi.Core.Entities
+﻿namespace AFirmasi.Core.Entities
 {
     public interface IEntity
     {
