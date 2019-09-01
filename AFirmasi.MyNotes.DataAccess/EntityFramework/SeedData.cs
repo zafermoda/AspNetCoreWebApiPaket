@@ -11,22 +11,18 @@ namespace AFirmasi.MyNotes.DataAccess.EntityFramework
         {
             var context = serviceProvider.GetRequiredService<MyNotesDbContext>();
             
-            context.Database.EnsureCreated();
+            context.Database.EnsureCreated();// Database yoksa oluşturur.
             
             Category category = new Category
             {
                 CategoryName = "Sosyal Ağ"                
             };
-
             
             if (!context.Categories.Any())
             {
                 context.Add(category);
                 context.SaveChanges();
             }
-
-            
-
         }
     }
 }

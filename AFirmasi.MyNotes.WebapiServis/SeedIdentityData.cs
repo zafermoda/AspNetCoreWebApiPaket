@@ -32,8 +32,6 @@ namespace AFirmasi.MyNotes.WebapiServis
 
             if (!context.Users.Any())
             {
-
-
                 var durum = await userManager.CreateAsync(user, "@Password135");
 
                 if (durum.Succeeded)
@@ -42,7 +40,12 @@ namespace AFirmasi.MyNotes.WebapiServis
                     {
                         if (await roleManager.FindByNameAsync(rolAdmin) == null)
                         {
-                            await roleManager.CreateAsync(new IdentityRole(rolAdmin));
+                            var result = await roleManager.CreateAsync(new IdentityRole(rolAdmin));
+                            if (result.Succeeded) await userManager.AddToRoleAsync(user, rolAdmin);
+                        }
+                        else
+                        {
+                            await userManager.AddToRoleAsync(user, rolAdmin);
                         }
 
                         if (await roleManager.FindByNameAsync(rolEditor) == null)
@@ -50,7 +53,6 @@ namespace AFirmasi.MyNotes.WebapiServis
                             await roleManager.CreateAsync(new IdentityRole(rolEditor));
                         }
 
-                        await userManager.AddToRoleAsync(user, rolAdmin);
 
                     }
                 }

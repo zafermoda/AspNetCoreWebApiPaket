@@ -10,8 +10,6 @@ namespace AFirmasi.MyNotes.WebapiServis.Filters
 {
     public class CurrentAuth : ActionFilterAttribute
     {
-
-
         public override void OnActionExecuting(ActionExecutingContext context)
         {
             if (context.HttpContext.User != null)

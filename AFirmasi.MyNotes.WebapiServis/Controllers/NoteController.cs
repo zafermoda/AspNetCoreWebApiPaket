@@ -18,8 +18,7 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
     [Authorize]
     public class NoteController : ControllerBase
     {
-        private INoteService noteService;
-               
+        private readonly INoteService noteService; 
 
         public NoteController(INoteService noteService)
         {
@@ -123,7 +122,7 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
 
             noteService.Update(note);
             result.IsSuccessFul = true;
-            result.Entity = note;
+            
             return Ok(result);
         }
 
