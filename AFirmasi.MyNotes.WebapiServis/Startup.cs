@@ -42,11 +42,24 @@ namespace AFirmasi.MyNotes.WebapiServis
                 options.SuppressModelStateInvalidFilter = true;
             });
 
+            #region SqlServer Connection Pasif
+            /*
             services.AddDbContext<MyNotesDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("AFirmasi.MyNotes.WebapiServis")));
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
 
             services.AddDbContext<AppIdentityDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("AFirmasi.MyNotes.WebapiServis")));
+                options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+            */
+            #endregion
+            
+
+            #region MySqlServer Connection Aktif
+            services.AddDbContext<MyNotesDbContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("MySqlDefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+
+            services.AddDbContext<AppIdentityDbContext>(options =>
+                options.UseMySql(Configuration.GetConnectionString("MySqlIdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+            #endregion
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
                 .AddEntityFrameworkStores<AppIdentityDbContext>()
