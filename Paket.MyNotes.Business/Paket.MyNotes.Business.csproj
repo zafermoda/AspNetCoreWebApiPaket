@@ -9,8 +9,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AFirmasi.Core\Paket.Core.csproj" />
-    <ProjectReference Include="..\AFirmasi.MyNotes.DataAccess\Paket.MyNotes.DataAccess.csproj" />
+    <ProjectReference Include="..\Paket.Core\Paket.Core.csproj" />
+    <ProjectReference Include="..\Paket.MyNotes.DataAccess\Paket.MyNotes.DataAccess.csproj" />
   </ItemGroup>
 
   

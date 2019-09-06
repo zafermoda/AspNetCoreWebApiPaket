@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AFirmasi.MyNotes.Business\Paket.MyNotes.Business.csproj" />
-    <ProjectReference Include="..\AFirmasi.MyNotes.DataAccess\Paket.MyNotes.DataAccess.csproj" />
-    <ProjectReference Include="..\AFirmasi.MyNotes.Entities\Paket.MyNotes.Entities.csproj" />
+    <ProjectReference Include="..\Paket.MyNotes.Business\Paket.MyNotes.Business.csproj" />
+    <ProjectReference Include="..\Paket.MyNotes.DataAccess\Paket.MyNotes.DataAccess.csproj" />
+    <ProjectReference Include="..\Paket.MyNotes.Entities\Paket.MyNotes.Entities.csproj" />
   </ItemGroup>
 
 </Project>
