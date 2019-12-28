@@ -11,7 +11,7 @@ namespace AFirmasi.MyNotes.DataAccess.EntityFramework
         {
             var context = serviceProvider.GetRequiredService<MyNotesDbContext>();
             
-            context.Database.EnsureCreated();// Database yoksa oluşturur.
+            //context.Database.EnsureCreated();// Database yoksa oluşturur.
             
             Category category = new Category
             {
