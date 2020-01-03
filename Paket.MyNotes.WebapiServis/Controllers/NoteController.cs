@@ -31,7 +31,6 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
         [NoteException]
         public IActionResult Get()
         {
-            //var currentUserName = User.FindFirstValue(ClaimTypes.NameIdentifier);
             ServiceResponse<Note> result = new ServiceResponse<Note>
             {
                 Entities = noteService.GetAllByUser().ToList(),
@@ -39,10 +38,6 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
             };
             result.EntitiesCount = result.Entities.Count();
 
-            //string userName = User.FindFirst(ClaimTypes.NameIdentifier)?.Value;
-            //string userRole = User.FindFirst(ClaimTypes.Role)?.Value;
-            
-            //throw new Exception("Kendi elimizle hata fırlattık!");
             return Ok(result);            
         }
 

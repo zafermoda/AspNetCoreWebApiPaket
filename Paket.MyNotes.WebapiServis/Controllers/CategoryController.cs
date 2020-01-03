@@ -41,9 +41,8 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
                 IsSuccessFul = true
             };
             result.EntitiesCount = result.Entities.Count();
-            //throw new Exception("Kendi elimizle hata fırlattık!");
+            
             return Ok(result);
-
         }
 
         // POST: api/Category
