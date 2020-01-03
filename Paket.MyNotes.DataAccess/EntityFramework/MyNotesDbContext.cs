@@ -10,13 +10,6 @@ namespace AFirmasi.MyNotes.DataAccess.EntityFramework
         }
 
         public DbSet<Category> Categories { get; set; }
-
         public DbSet<Note> Notes { get; set; }
-
-        //protected override void OnModelCreating(ModelBuilder modelBuilder)
-        //{
-            
-        //    base.OnModelCreating(modelBuilder);
-        //}
     }
 }

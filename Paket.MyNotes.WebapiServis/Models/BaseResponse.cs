@@ -12,6 +12,10 @@ namespace AFirmasi.MyNotes.WebapiServis.Models
 
         public bool IsSuccessFul { get; set; }
 
+        public BaseResponse()
+        {
+            Errors = new List<string>();
+        }
         
     }
 }
