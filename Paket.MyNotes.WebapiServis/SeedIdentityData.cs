@@ -19,8 +19,7 @@ namespace AFirmasi.MyNotes.WebapiServis
             string rolAdmin = "admin";
             string rolEditor = "editor";
 
-
-            context.Database.EnsureCreated();
+            //context.Database.EnsureCreated();
 
             ApplicationUser user = new ApplicationUser()
             {

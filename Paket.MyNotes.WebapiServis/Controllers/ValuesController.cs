@@ -9,7 +9,6 @@ namespace AFirmasi.MyNotes.WebapiServis.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(Roles = "admin")]
     public class ValuesController : ControllerBase
     {
         // GET api/values

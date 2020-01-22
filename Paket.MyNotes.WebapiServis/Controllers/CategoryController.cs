@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using System.Security.Claims;
-using System.Threading.Tasks;
-using AFirmasi.MyNotes.Business;
 using AFirmasi.MyNotes.Business.Abstract;
 using AFirmasi.MyNotes.Entities;
 using AFirmasi.MyNotes.WebapiServis.Filters;
 using AFirmasi.MyNotes.WebapiServis.Models;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace AFirmasi.MyNotes.WebapiServis.Controllers
