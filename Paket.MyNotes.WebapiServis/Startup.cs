@@ -16,6 +16,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
+
 namespace AFirmasi.MyNotes.WebapiServis
 {
     public class Startup
@@ -31,7 +32,7 @@ namespace AFirmasi.MyNotes.WebapiServis
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddRazorPages();
+            //services.AddRazorPages();
             
             services.Configure<ApiBehaviorOptions>(options =>
             {

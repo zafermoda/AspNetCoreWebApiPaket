@@ -22,11 +22,7 @@ namespace AFirmasi.MyNotes.WebapiServis
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
-                    webBuilder.ConfigureKestrel(serverOptions =>
-                    {
-                        // Set properties and call methods on options
-                    })
-                    .UseStartup<Startup>();
+                    webBuilder.UseStartup<Startup>();
                 });
     }
 }
