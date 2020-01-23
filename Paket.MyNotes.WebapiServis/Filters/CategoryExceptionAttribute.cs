@@ -1,9 +1,9 @@
-﻿using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis.Models;
+﻿using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
-namespace AFirmasi.MyNotes.WebapiServis.Filters
+namespace Paket.MyNotes.WebapiServis.Filters
 {
     public class CategoryExceptionAttribute : ExceptionFilterAttribute
     {

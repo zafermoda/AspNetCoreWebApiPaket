@@ -1,9 +1,9 @@
-﻿using AFirmasi.MyNotes.Business;
-using AFirmasi.MyNotes.WebapiServis.Models;
+﻿using Paket.MyNotes.Business;
+using Paket.MyNotes.WebapiServis.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AFirmasi.MyNotes.WebapiServis.Init
+namespace Paket.MyNotes.WebapiServis.Init
 {
     public class WebCommon : ICommon
     {

@@ -1,4 +1,4 @@
-﻿namespace AFirmasi.Core.Entities
+﻿namespace Paket.Core.Entities
 {
     public interface IEntity
     {

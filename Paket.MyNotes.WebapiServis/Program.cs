@@ -9,7 +9,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace AFirmasi.MyNotes.WebapiServis
+namespace Paket.MyNotes.WebapiServis
 {
     public class Program
     {

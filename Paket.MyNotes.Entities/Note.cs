@@ -1,6 +1,6 @@
-﻿using AFirmasi.Core.Entities;
+﻿using Paket.Core.Entities;
 
-namespace AFirmasi.MyNotes.Entities
+namespace Paket.MyNotes.Entities
 {
     public class Note : IEntity
     {

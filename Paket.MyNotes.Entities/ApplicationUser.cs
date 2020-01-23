@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Identity;
 
-namespace AFirmasi.MyNotes.Entities
+namespace Paket.MyNotes.Entities
 {
     public class ApplicationUser : IdentityUser
     {

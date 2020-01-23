@@ -1,4 +1,4 @@
-﻿using AFirmasi.Core.Entities;
+﻿using Paket.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -6,7 +6,7 @@ using System.Linq;
 using System.Linq.Expressions;
 using System.Text;
 
-namespace AFirmasi.Core.Dal
+namespace Paket.Core.Dal
 {
     public interface IRepository<T> where T : class, IEntity
     {

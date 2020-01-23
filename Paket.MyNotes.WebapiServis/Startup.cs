@@ -1,10 +1,10 @@
 ﻿using System.Text;
-using AFirmasi.MyNotes.Business;
-using AFirmasi.MyNotes.Business.Abstract;
-using AFirmasi.MyNotes.DataAccess.Abstract;
-using AFirmasi.MyNotes.DataAccess.EntityFramework;
-using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis.Init;
+using Paket.MyNotes.Business;
+using Paket.MyNotes.Business.Abstract;
+using Paket.MyNotes.DataAccess.Abstract;
+using Paket.MyNotes.DataAccess.EntityFramework;
+using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis.Init;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -17,7 +17,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.IdentityModel.Tokens;
 
 
-namespace AFirmasi.MyNotes.WebapiServis
+namespace Paket.MyNotes.WebapiServis
 {
     public class Startup
     {

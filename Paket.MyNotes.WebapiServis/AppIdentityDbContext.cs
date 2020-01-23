@@ -1,4 +1,4 @@
-﻿using AFirmasi.MyNotes.Entities;
+﻿using Paket.MyNotes.Entities;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AFirmasi.MyNotes.WebapiServis
+namespace Paket.MyNotes.WebapiServis
 {
     public class AppIdentityDbContext : IdentityDbContext<ApplicationUser, IdentityRole, string>
     {

@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Security.Claims;
 using System.Text;
 
-namespace AFirmasi.MyNotes.WebapiServis.Models
+namespace Paket.MyNotes.WebapiServis.Models
 {
 
     public class CurrentSession

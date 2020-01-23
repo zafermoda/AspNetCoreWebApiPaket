@@ -1,7 +1,7 @@
-﻿using AFirmasi.Core.Dal;
-using AFirmasi.MyNotes.Entities;
+﻿using Paket.Core.Dal;
+using Paket.MyNotes.Entities;
 
-namespace AFirmasi.MyNotes.DataAccess.Abstract
+namespace Paket.MyNotes.DataAccess.Abstract
 {
     public interface INoteRepository : IRepository<Note>
     {

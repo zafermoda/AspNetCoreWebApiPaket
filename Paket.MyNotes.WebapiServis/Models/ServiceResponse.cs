@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace AFirmasi.MyNotes.WebapiServis.Models
+namespace Paket.MyNotes.WebapiServis.Models
 {
     public class ServiceResponse<T> : BaseResponse
     {

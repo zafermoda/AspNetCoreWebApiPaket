@@ -1,7 +1,7 @@
-﻿using AFirmasi.MyNotes.Entities;
+﻿using Paket.MyNotes.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AFirmasi.MyNotes.DataAccess.EntityFramework
+namespace Paket.MyNotes.DataAccess.EntityFramework
 {
     public class MyNotesDbContext : DbContext
     {

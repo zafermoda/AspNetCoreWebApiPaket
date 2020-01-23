@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace AFirmasi.MyNotes.WebapiServis.Models
+namespace Paket.MyNotes.WebapiServis.Models
 {
     public class TokenResponse : BaseResponse
     {

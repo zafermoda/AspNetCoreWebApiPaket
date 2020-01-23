@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AFirmasi.MyNotes.WebapiServis.Models
+namespace Paket.MyNotes.WebapiServis.Models
 {
     public class NoteModel
     {

@@ -1,12 +1,12 @@
 ﻿using System.Linq;
-using AFirmasi.MyNotes.Business.Abstract;
-using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis.Filters;
-using AFirmasi.MyNotes.WebapiServis.Models;
+using Paket.MyNotes.Business.Abstract;
+using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis.Filters;
+using Paket.MyNotes.WebapiServis.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AFirmasi.MyNotes.WebapiServis.Controllers
+namespace Paket.MyNotes.WebapiServis.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

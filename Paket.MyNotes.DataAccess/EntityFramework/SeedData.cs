@@ -1,9 +1,9 @@
-﻿using AFirmasi.MyNotes.Entities;
+﻿using Paket.MyNotes.Entities;
 using Microsoft.Extensions.DependencyInjection;
 using System;
 using System.Linq;
 
-namespace AFirmasi.MyNotes.DataAccess.EntityFramework
+namespace Paket.MyNotes.DataAccess.EntityFramework
 {
     public class SeedData
     {

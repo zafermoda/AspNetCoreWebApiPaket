@@ -1,8 +1,8 @@
-﻿using AFirmasi.Core.EntityFramework;
-using AFirmasi.MyNotes.DataAccess.Abstract;
-using AFirmasi.MyNotes.Entities;
+﻿using Paket.Core.EntityFramework;
+using Paket.MyNotes.DataAccess.Abstract;
+using Paket.MyNotes.Entities;
 
-namespace AFirmasi.MyNotes.DataAccess.EntityFramework
+namespace Paket.MyNotes.DataAccess.EntityFramework
 {
     public class NoteDal : RepositoryBase<Note, MyNotesDbContext>, INoteRepository
     {

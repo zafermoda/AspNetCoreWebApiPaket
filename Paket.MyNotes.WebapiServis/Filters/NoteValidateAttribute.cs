@@ -1,5 +1,5 @@
-﻿using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis.Models;
+﻿using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AFirmasi.MyNotes.WebapiServis.Filters
+namespace Paket.MyNotes.WebapiServis.Filters
 {
     public class NoteValidateAttribute : ActionFilterAttribute
     {

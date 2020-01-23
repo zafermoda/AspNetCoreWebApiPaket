@@ -1,10 +1,10 @@
-﻿using AFirmasi.MyNotes.Entities;
+﻿using Paket.MyNotes.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace AFirmasi.MyNotes.Business.Abstract
+namespace Paket.MyNotes.Business.Abstract
 {
     public interface INoteService
     {

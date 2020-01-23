@@ -1,4 +1,4 @@
-﻿namespace AFirmasi.MyNotes.Business
+﻿namespace Paket.MyNotes.Business
 {
     public interface ICommon
     {

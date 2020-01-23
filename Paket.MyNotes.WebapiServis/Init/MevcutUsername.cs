@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace AFirmasi.MyNotes.WebapiServis.Init
+namespace Paket.MyNotes.WebapiServis.Init
 {
     public class MevcutUsername
     {

@@ -1,11 +1,11 @@
-﻿using AFirmasi.Core.Dal;
-using AFirmasi.Core.Entities;
+﻿using Paket.Core.Dal;
+using Paket.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace AFirmasi.Core.EntityFramework
+namespace Paket.Core.EntityFramework
 {
     public class RepositoryBase<Tentity, Tcontext> : IRepository<Tentity>
         where Tentity : class, IEntity

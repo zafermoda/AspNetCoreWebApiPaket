@@ -1,9 +1,9 @@
 ﻿
-using AFirmasi.Core.Entities;
+using Paket.Core.Entities;
 using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace AFirmasi.MyNotes.Entities
+namespace Paket.MyNotes.Entities
 {
     public class Category :IEntity
     {

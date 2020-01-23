@@ -2,12 +2,12 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
-using AFirmasi.MyNotes.Business.Abstract;
-using AFirmasi.MyNotes.DataAccess.Abstract;
-using AFirmasi.MyNotes.Entities;
+using Paket.MyNotes.Business.Abstract;
+using Paket.MyNotes.DataAccess.Abstract;
+using Paket.MyNotes.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace AFirmasi.MyNotes.Business
+namespace Paket.MyNotes.Business
 {
     public class NoteManager : INoteService
     {

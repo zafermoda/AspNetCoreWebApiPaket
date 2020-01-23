@@ -4,13 +4,13 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
-using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis.Models;
+using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
-namespace AFirmasi.MyNotes.WebapiServis.Controllers
+namespace Paket.MyNotes.WebapiServis.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
