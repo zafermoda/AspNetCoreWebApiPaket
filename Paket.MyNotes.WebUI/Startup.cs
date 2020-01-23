@@ -1,13 +1,15 @@
+using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
-using AFirmasi.MyNotes.Business;
-using AFirmasi.MyNotes.Business.Abstract;
-using AFirmasi.MyNotes.DataAccess.Abstract;
-using AFirmasi.MyNotes.DataAccess.EntityFramework;
-using AFirmasi.MyNotes.Entities;
-using AFirmasi.MyNotes.WebapiServis;
-using AFirmasi.MyNotes.WebapiServis.Init;
+using Paket.MyNotes.Business;
+using Paket.MyNotes.Business.Abstract;
+using Paket.MyNotes.DataAccess.Abstract;
+using Paket.MyNotes.DataAccess.EntityFramework;
+using Paket.MyNotes.Entities;
+using Paket.MyNotes.WebapiServis;
+using Paket.MyNotes.WebapiServis.Init;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -15,8 +17,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 
 
 
@@ -64,6 +68,14 @@ namespace Paket.MyNotes.WebUI
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app)
         {
+
+            app.UseStaticFiles();
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), "node_modules")),
+                RequestPath = "/node",
+            });
+
             app.UseRouting();
 
             app.UseAuthentication();
