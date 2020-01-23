@@ -13,6 +13,11 @@ namespace Paket.MyNotes.WebUI.Controllers
             
             return View();
         }
+
+        public IAsyncResult NewNote()
+        {
+            return View();
+        }
     }
         
     
