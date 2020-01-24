@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paket.MyNotes.Entities", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paket.MyNotes.WebapiServis", "Paket.MyNotes.WebapiServis\Paket.MyNotes.WebapiServis.csproj", "{8D9968A0-D39B-4B61-A4D4-FAD52BCFD75D}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Paket.MyNotes.WebUI", "Paket.MyNotes.WebUI\Paket.MyNotes.WebUI.csproj", "{4484EBC4-5707-47AB-910A-A70607E6D4CA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{8D9968A0-D39B-4B61-A4D4-FAD52BCFD75D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8D9968A0-D39B-4B61-A4D4-FAD52BCFD75D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8D9968A0-D39B-4B61-A4D4-FAD52BCFD75D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4484EBC4-5707-47AB-910A-A70607E6D4CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4484EBC4-5707-47AB-910A-A70607E6D4CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4484EBC4-5707-47AB-910A-A70607E6D4CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4484EBC4-5707-47AB-910A-A70607E6D4CA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
