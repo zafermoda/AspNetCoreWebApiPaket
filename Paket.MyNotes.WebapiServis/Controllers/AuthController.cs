@@ -68,7 +68,8 @@ namespace Paket.MyNotes.WebapiServis.Controllers
                 {
                     HasError = true
                 };
-                response.Errors.Add("Kullanıcı adı ve parola yanlış!");
+                //response.Errors.Add("Kullanıcı adı veya parola yanlış!");
+                response.Errors.Add("Username or password is wrong!");
                 return BadRequest(response);
             }
 

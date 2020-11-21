@@ -39,25 +39,24 @@ namespace Paket.MyNotes.WebapiServis
                 options.SuppressModelStateInvalidFilter = true;
             });
 
-            #region SqlServer Connection Pasif
-            /*
+            #region > Sql Connection Aktif            
             services.AddDbContext<MyNotesDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
 
             services.AddDbContext<AppIdentityDbContext>(options =>
-                options.UseSqlServer(Configuration.GetConnectionString("IdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
-            */
+                options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+            
             #endregion
             
-            #region MySqlServer Connection Aktif
-            services.AddDbContext<MyNotesDbContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("MySqlDefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+            #region X MySqlServer Connection Pasif
+            //services.AddDbContext<MyNotesDbContext>(options =>
+            //    options.UseMySql(Configuration.GetConnectionString("MySqlDefaultConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
 
-            services.AddDbContext<AppIdentityDbContext>(options =>
-                options.UseMySql(Configuration.GetConnectionString("MySqlIdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
+            //services.AddDbContext<AppIdentityDbContext>(options =>
+            //    options.UseMySql(Configuration.GetConnectionString("MySqlIdentityConnection"), b => b.MigrationsAssembly("Paket.MyNotes.WebapiServis")));
             #endregion
 
-            #region Identity ve Jwt ayarları
+            #region > Identity ve Jwt ayarları
             services.AddIdentity<ApplicationUser, IdentityRole>(options => {
                 options.User.RequireUniqueEmail = false;
                 options.Password.RequiredLength = 4;
@@ -90,7 +89,7 @@ namespace Paket.MyNotes.WebapiServis
                 });
             #endregion
 
-            #region Dependency Injections
+            #region > Dependency Injections
             services.AddScoped<INoteService, NoteManager>();
             services.AddScoped<INoteRepository, NoteDal>();
             services.AddScoped<ICategoryService, CategoryManager>();

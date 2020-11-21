@@ -24,7 +24,7 @@ namespace Paket.MyNotes.WebapiServis
             ApplicationUser user = new ApplicationUser()
             {
                 UserName = "zafer",
-                Email = "zafer@gmail.com",
+                Email = "zafer.moda@hotmail.com",
                 SecurityStamp = Guid.NewGuid().ToString()
             };
 
