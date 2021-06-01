@@ -33,8 +33,8 @@ namespace Paket.MyNotes.WebapiServis.Controllers
                 var userRoles = await userManager.GetRolesAsync(user);
                 var claims = new List<Claim>
                 {
-                    new Claim(JwtRegisteredClaimNames.Sub, user.UserName),
-                    new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())                    
+                    new Claim(JwtRegisteredClaimNames.Sub, user.UserName),                                        
+                    new Claim(JwtRegisteredClaimNames.Jti, user.Id)
                 };
 
                 foreach (var role in userRoles)
@@ -45,9 +45,10 @@ namespace Paket.MyNotes.WebapiServis.Controllers
                 var signinKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("AspNetCoreDersiB"));
 
                 var token = new JwtSecurityToken(
-                    issuer: "https://localhost:44346",
-                    audience: "https://localhost:44346",
-                    expires: DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddHours(1),
+                    issuer: "https://localhost:5001",
+                    audience: "https://localhost:5001",
+                    //expires: DateTime.SpecifyKind(DateTime.Now, DateTimeKind.Utc).AddHours(1),
+                    expires: DateTime.Now.AddMonths(6),
                     claims: claims,
                     signingCredentials: new SigningCredentials(signinKey, SecurityAlgorithms.HmacSha256)
                 );
@@ -68,8 +69,8 @@ namespace Paket.MyNotes.WebapiServis.Controllers
                 {
                     HasError = true
                 };
-                //response.Errors.Add("Kullanıcı adı veya parola yanlış!");
-                response.Errors.Add("Username or password is wrong!");
+                response.Errors.Add("Kullanıcı adı veya parola yanlış!");
+                //response.Errors.Add("Username or password is wrong!");
                 return BadRequest(response);
             }
 
