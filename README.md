@@ -20,7 +20,8 @@ Aynı işlemler Identity için de gerçekleştirilir.
   dotnet ef database update -c AppIdentityDbContext
   ```
 <br>
-böylelikle veritabanı oluşturulmuş ve gerekli tablolarımız oluşmuş olur.
+Böylelikle veritabanı ve gerekli tablolarımız oluşmuş olur.
 <br><br>
-Projeyi çalıştırdığınızda SeedData ve SeedIdentityData sınıfları çalışacak ve ilk veriler veritabanına kaydolacaktır.<br>
+Projeyi çalıştırdığınızda SeedData ve SeedIdentityData sınıfları çalışacak ve ilk veriler veritabanına kaydolacaktır.
+<br>
 Siz bu sınıflardaki veriyi kendinize göre düzenlemeyi unutmayınız.
